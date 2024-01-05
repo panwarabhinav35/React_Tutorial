@@ -4,6 +4,7 @@ import { PostList as PostListData } from "../Store/PostListStore";
 import Welcome from "./Welcome";
 import LoadingSpinner from "./LoadingSpinner";
 
+
 const PostList=()=>{
     const {postList,addInitialPosts}=useContext(PostListData);
     const [fetching,setFetching]=useState(false);
