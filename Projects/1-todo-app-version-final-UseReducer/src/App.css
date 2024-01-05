@@ -1,0 +1,36 @@
+h1{
+    font-weight: 700;
+    border-radius: 20px;
+    border-style: solid;
+    font-size: 45px;
+    background-color: rgb(9, 238, 59);
+    margin: 100px;
+    padding: 5px;
+}
+input{
+    width: 100%;
+
+}
+.Items-container{
+    background-color: black;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 90px;
+    
+}
+.Abhirow{
+    text-align: left;
+    margin: 10px 5px;
+    padding: 15px;
+    background-color: aqua;
+    border-radius: 20px;
+    border-style: solid;
+}
+.Abhibutton{
+    width: 50px;
+    float: left;
+}
+
+
+

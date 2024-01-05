@@ -1,0 +1,26 @@
+span{
+  color: blue;
+  background-color: black;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  border-style: double;
+  border-color: brown;
+}
+li.list-group-item.liclass {
+  background-color: blueviolet;
+  border-style: groove;
+  border-color: black;
+  padding: 10px;
+  margin: 1px;
+  border-radius:5px;
+}
+
+.Container{
+  margin-top: 50px;
+  width: 50%;
+  min-width: 50%;
+  text-align: left;  
+  border: 5px solid;
+  padding: 10px;
+}
