@@ -1,11 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import Header from './Components/Header'
-import FOoter from './Components/Footer'
-import SideBar from './Components/SideBar'
-import CreatePost from './Components/CreatePost'
-import PostList from './Components/PostList'
-import PostListProvider from './Store/PostListStore'
+import Header from '../Header'
+import FOoter from '../Footer'
+import SideBar from '../SideBar'
+import CreatePost from '../CreatePost'
+import PostList from '../PostList'
+import PostListProvider from '../../Store/PostListStore'
+import { Outlet } from 'react-router-dom'
 
 
 
@@ -19,7 +20,7 @@ function App() {
         <SideBar selectedTab={selectedTab} setselectedTab={setselectedTab}></SideBar>
         <div className='content'>
           <Header></Header>
-          {selectedTab==='Home'?<PostList></PostList> : <CreatePost></CreatePost> }       
+          <Outlet></Outlet>    
           <FOoter></FOoter>
         </div>
         

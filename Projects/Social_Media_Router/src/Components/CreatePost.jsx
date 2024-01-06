@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { useRef } from "react";
 import { PostList } from "../Store/PostListStore";
+import { useNavigate } from "react-router-dom";
 
 const CreatePost=()=>{
+    const navigate=useNavigate();
     const {addPost} = useContext(PostList)
     const userIdElement=useRef("");
     const postTitleElement=useRef("");
@@ -39,10 +41,7 @@ const CreatePost=()=>{
         })
         .then(res => res.json())
         .then(post => addPost(post));
-
-        
-
-        
+        navigate("/")
     }
     return(
         <form className="createPost" onSubmit={handleSubmit}>
