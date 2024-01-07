@@ -12,12 +12,12 @@ import { Outlet } from 'react-router-dom'
 
 
 function App() {
-   const [selectedTab,setselectedTab]=useState("Home");
+   
   return(
     <>
     <PostListProvider>
       <div className='appContainer'>
-        <SideBar selectedTab={selectedTab} setselectedTab={setselectedTab}></SideBar>
+        <SideBar ></SideBar>
         <div className='content'>
           <Header></Header>
           <Outlet></Outlet>    
